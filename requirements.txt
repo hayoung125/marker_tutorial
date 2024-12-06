@@ -1,0 +1,2 @@
+marker-pdf==1.0.2
+easydict==1.13
