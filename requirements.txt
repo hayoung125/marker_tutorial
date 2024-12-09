@@ -1,2 +1,8 @@
+# marker
 marker-pdf==1.0.2
+
+# general
 easydict==1.13
+
+# megaparse
+# megaparse==0.0.48
