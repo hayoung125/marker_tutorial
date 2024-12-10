@@ -10,13 +10,13 @@ import time
 from marker.config.parser import ConfigParser
 from marker.converters.pdf import PdfConverter
 
-# from marker.logger import configure_logging
+from marker.logger import configure_logging
 from marker.models import create_model_dict
 from marker.output import save_output
 
 from src.config import cfg_engine
 
-# configure_logging()
+configure_logging()
 
 
 def main(fpath: str, **kwargs):
@@ -34,7 +34,7 @@ def main(fpath: str, **kwargs):
     save_output(rendered, out_folder, config_parser.get_base_filename(fpath))
 
     print(f"Saved markdown to {out_folder}")
-    print(f"Total time: {time.strftime('%H:%M:%S', time.time() - start)}")
+    print(f"Total time: {time.strftime('%H:%M:%S', time.gmtime(time.time() - start))}")
 
 
 if __name__ == "__main__":

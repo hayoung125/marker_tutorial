@@ -1,5 +1,5 @@
 marker: 
-    debug: False  # [bool] Debug mode.
+    debug: True  # [bool] Debug mode.
     in_folder: "./data"  # [str] dir path containing PDFs to convert
     output_dir: "./output"  # [str] Output directory for converted files.
     output_format: "markdown" # [markdown|json|html]
@@ -8,6 +8,6 @@ marker:
     max_files: null # [int] Maximum number of PDFs to convert. 최대 몇 개의 파일까지 변환할 건지 지정.
     workers: 2  # [int] Number of worker processes to use.
     skip_existing: False  # [bool] 기존 변환된 파일을 건너뛸 수 있습니다.
-    # page_range: "2-3" # [str] Specify which pages to process. Accepts comma-separated page numbers and ranges. Example: "0,5-10,20" will process pages 0, 5 through 10, and page 20.
+    # page_range: "1" # [str] Specify which pages to process. Accepts comma-separated page numbers and ranges. Example: "0,5-10,20" will process pages 0, 5 through 10, and page 20.
     # force_ocr: False    # [bool] Force OCR for PDFs.
     # language: "eng"   # [str] Language code for Tesseract OCR. e.g. "ko"
